@@ -8,7 +8,7 @@ description: "Control Penpot through its authenticated JSON RPC API from macOS s
 ## Install
 
 Development: `python3 -m pip install -e .`
-Homebrew (after publishing the tap): `brew install alvaro/tap/cli-anything-penpot`
+Homebrew (after publishing the tap): `brew install alvaroum/tap/cli-anything-penpot`
 
 The executable is `cli-anything-penpot`; `penpot` is an equivalent alias.
 

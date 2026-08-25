@@ -1,8 +1,8 @@
 class CliAnythingPenpot < Formula
   desc "Lightweight, agent-friendly CLI for the Penpot HTTP API"
-  homepage "https://github.com/alvaro/cli-anything-penpot"
-  url "https://github.com/alvaro/cli-anything-penpot/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "REPLACE_WITH_RELEASE_SHA256"
+  homepage "https://github.com/alvaroum/cli-anything-penpot"
+  url "https://github.com/alvaroum/cli-anything-penpot/archive/refs/tags/v0.1.0.tar.gz"
+  sha256 "85b14032db31bf54f2454a9dedaa45c22ac103af4f29b3880ed592ec3d3f633a"
   license "MIT"
 
   resource "click" do
