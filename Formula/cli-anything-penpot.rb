@@ -11,7 +11,6 @@ class CliAnythingPenpot < Formula
     sha256 "a2bf429bb3033c89fa4936ffb35d5cb471e3719e1f3c8a7c3fff0b8314305613"
   end
 
-
   def install
     system "python3", "-m", "venv", libexec
     resource("click").stage do
