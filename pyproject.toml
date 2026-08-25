@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cli-anything-penpot"
+version = "0.1.0"
+description = "Lightweight, agent-friendly CLI for the Penpot HTTP API"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "Alvaro"}]
+dependencies = ["click>=8.3.3,<9"]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: MacOS",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+]
+
+[project.scripts]
+cli-anything-penpot = "cli_anything.penpot.cli:main"
+penpot = "cli_anything.penpot.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["cli_anything.*"]
+
+[tool.setuptools.package-data]
+"cli_anything.penpot" = ["skills/*.md"]
