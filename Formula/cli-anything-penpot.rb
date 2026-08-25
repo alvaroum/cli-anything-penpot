@@ -13,7 +13,7 @@ class CliAnythingPenpot < Formula
   depends_on "python@3.13"
 
   def install
-    virtualenv_create(libexec, "python3")
+    system "python3", "-m", "venv", libexec
     resource("click").stage do
       system libexec/"bin/pip", "install", "--no-index", Dir["*.whl"].first
     end
