@@ -5,12 +5,12 @@ class CliAnythingPenpot < Formula
   sha256 "85b14032db31bf54f2454a9dedaa45c22ac103af4f29b3880ed592ec3d3f633a"
   license "MIT"
 
+  depends_on "python@3.13"
   resource "click" do
     url "https://files.pythonhosted.org/packages/ae/44/c1221527f6a71a01ec6fbad7fa78f1d50dfa02217385cf0fa3eec7087d59/click-8.3.3-py3-none-any.whl"
     sha256 "a2bf429bb3033c89fa4936ffb35d5cb471e3719e1f3c8a7c3fff0b8314305613"
   end
 
-  depends_on "python@3.13"
 
   def install
     system "python3", "-m", "venv", libexec
